@@ -42,7 +42,7 @@ gear_ratio = -N2 / N1;
 % Route
 % start at the center
 position1 = [0 0 -32];
-ang11 = inverse(position1);     % calculate the input angles
+ang11 = inverseKinematics(position1);     % calculate the input angles
 ang21 = gear_ratio .* ang11;
 
 % read degrees from the sensor
@@ -120,7 +120,7 @@ X = 0;
 Y = -7;
 Z = -22;
 position2 = [X Y Z];
-ang12 = inverse(position2);
+ang12 = inverseKinematics(position2);
 ang22 = gear_ratio .* ang12;
 
 % read degrees from the sensor
