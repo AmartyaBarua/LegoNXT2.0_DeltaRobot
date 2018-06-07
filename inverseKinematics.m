@@ -1,4 +1,4 @@
-fuction [THETAS] = inverse(position)
+fuction [THETAS] = inverseKinematics(position)
 
 X = position(1);
 Y = position(2);
